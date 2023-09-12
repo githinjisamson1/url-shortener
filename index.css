@@ -120,13 +120,16 @@ input {
   box-shadow: 0px 0px 3px;
   margin-right: 5px;
   padding: 10px;
-  text-align: center;
+  /* text-align: center; */
   border-radius: 5px;
-  height: 200px;
+  height: 330px;
   transition: all 300ms;
 }
 .card:hover {
   box-shadow: 0px 0px 0px;
+}
+.card h4 {
+  text-align: center;
 }
 .boost-links {
   margin-top: 2rem;
@@ -153,9 +156,10 @@ footer {
   display: flex;
 }
 .icons i {
-  margin-right: 5px;
+  margin-right: 16px;
   cursor: pointer;
+  transition: all 300ms ease;
 }
 .icons i:hover {
-  font-style: 18px;
+  font-size: 20px;
 }
