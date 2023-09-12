@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
+    <!-- favicon -->
     <link
       rel="icon"
       type="image/png"
@@ -35,126 +35,136 @@
     </style>
   </head>
   <body>
-    <!-- Header Section Start-->
-    <header>
-      <h1>Shortly</h1>
-      <ul class="navlinks">
-        <li>
-          <a href="#">Features</a>
-        </li>
-        <li>
-          <a href="#">Pricing</a>
-        </li>
-        <li>
-          <a href="#">Resources</a>
-        </li>
-      </ul>
-      <div>
-        <button>Login</button>
-        <button>Sign Up</button>
+    <div class="content">
+      <!-- Header Section Start-->
+      <header>
+        <h1>Shortly</h1>
+        <ul class="navlinks">
+          <li>
+            <a href="#advanced">Features</a>
+          </li>
+          <li>
+            <a href="#">Pricing</a>
+          </li>
+          <li>
+            <a href="#">Resources</a>
+          </li>
+        </ul>
+        <div>
+          <button>Login</button>
+          <button>Sign Up</button>
+        </div>
+      </header>
+      <!-- Header section end -->
+
+      <!-- main section start -->
+      <main>
+        <!-- top start -->
+        <section class="top">
+          <div>
+            <h1>More than just shorter links</h1>
+            <p>
+              Build your brand’s recognition and get detailed insights on how
+              your links are performing.
+            </p>
+            <br />
+            <button>Get Started</button>
+          </div>
+          <div>
+            <img
+              src="images/illustration-working.svg"
+              alt="illustration-working"
+            />
+          </div>
+        </section>
+        <!-- top end -->
+
+        <!-- middle start -->
+        <section class="middle">
+          <input type="url" placeholder="Shorten a link here..." autofocus />
+
+          <div>
+            <button type="submit">Shorten It!</button>
+          </div>
+        </section>
+        <!-- middle end -->
+
+        <!-- bottom start -->
+        <section class="bottom">
+          <div class="advanced" id="advanced">
+            <h3>Advanced Statistics</h3>
+            <p>
+              Track how your links are performing across the web with our
+              advanced statistics dashboard.
+            </p>
+          </div>
+          <div class="cards">
+            <div class="card">
+              <h4>Brand Recognition</h4>
+              <p>
+                Boost your brand recognition with each click. Generic links
+                don’t mean a thing. Branded links help instil confidence in your
+                content.
+              </p>
+            </div>
+            <div class="card">
+              <h4>Detailed Records</h4>
+              <p>
+                Gain insights into who is clicking your links. Knowing when and
+                where people engage with your content helps inform better
+                decisions.
+              </p>
+            </div>
+            <div class="card">
+              <h4>Fully Customizable</h4>
+              <p>
+                Improve brand awareness and content discoverability through
+                customizable links, supercharging audience engagement.
+              </p>
+            </div>
+          </div>
+          <div class="boost-links">
+            <h1>Boost your links today</h1>
+            <button>Get Started</button>
+          </div>
+        </section>
+        <!-- bottom end -->
+      </main>
+      <!-- main section end -->
+
+      <!-- footer section start -->
+      <footer>
+        <h3>Shortly</h3>
+        <ul>
+          <li><a href="">Link</a></li>
+          <li><a href="">Branded</a></li>
+          <li><a href="">Analytics</a></li>
+        </ul>
+        <ul>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Developers</a></li>
+          <li><a href="">Support</a></li>
+        </ul>
+        <ul>
+          <li><a href="">About</a></li>
+          <li><a href="">Our Team</a></li>
+          <li><a href="">Careers</a></li>
+        </ul>
+        <div class="icons">
+          <i id="facebook" class="fab fa-facebook"></i><br />
+          <i id="twitter" class="fab fa-twitter"></i><br />
+          <i id="instagram" class="fab fa-instagram"></i><br />
+          <i id="linkedin" class="fab fa-linkedin"></i><br />
+        </div>
+      </footer>
+      <!-- footer section end -->
+
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Spartans Group 3</a>.
       </div>
-    </header>
-    <!-- Header section end -->
-
-    <!-- main section start -->
-    <main>
-      <section class="top">
-        <div>
-          <h1>More than just shorter links</h1>
-          <p>
-            Build your brand’s recognition and get detailed insights on how your
-            links are performing.
-          </p>
-          <br />
-          <button>Get Started</button>
-        </div>
-        <div>
-          <img src="images/illustration-working.svg" alt="" />
-        </div>
-      </section>
-
-      <section class="middle">
-        <div>
-          <input type="url" placeholder="Shorten a link here..." />
-        </div>
-        <div>
-          <button>Shorten It!</button>
-        </div>
-      </section>
-
-      <section class="bottom">
-        <div class="advanced">
-          <h3>Advanced Statistics</h3>
-          <p>
-            Track how your links are performing across the web with our advanced
-            statistics dashboard.
-          </p>
-        </div>
-        <div class="cards">
-          <div class="card">
-            <h4>Brand Recognition</h4>
-            <p>
-              Boost your brand recognition with each click. Generic links don’t
-              mean a thing. Branded links help instil confidence in your
-              content.
-            </p>
-          </div>
-          <div class="card">
-            <h4>Detailed Records</h4>
-            <p>
-              Gain insights into who is clicking your links. Knowing when and
-              where people engage with your content helps inform better
-              decisions.
-            </p>
-          </div>
-          <div class="card">
-            <h4>Fully Customizable</h4>
-            <p>
-              Improve brand awareness and content discoverability through
-              customizable links, supercharging audience engagement.
-            </p>
-          </div>
-        </div>
-        <div class="boost-links">
-          <h1>Boost your links today</h1>
-          <button>Get Started</button>
-        </div>
-      </section>
-    </main>
-    <!-- main section end -->
-
-    <!-- footer section start -->
-    <footer>
-      <h3>Shortly</h3>
-      <ul>
-        <li><a href="">Link</a></li>
-        <li><a href="">Branded</a></li>
-        <li><a href="">Analytics</a></li>
-      </ul>
-      <ul>
-        <li><a href="">Blog</a></li>
-        <li><a href="">Developers</a></li>
-        <li><a href="">Support</a></li>
-      </ul>
-      <ul>
-        <li><a href="">About</a></li>
-        <li><a href="">Our Team</a></li>
-        <li><a href="">Careers</a></li>
-      </ul>
-      <div class="icons">
-        <i id="facebook" class="fab fa-facebook"></i><br />
-        <i id="twitter" class="fab fa-twitter"></i><br />
-        <i id="instagram" class="fab fa-instagram"></i><br />
-        <i id="linkedin" class="fab fa-linkedin"></i><br />
-      </div>
-    </footer>
-    <!-- footer section end -->
-
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
     </div>
   </body>
 </html>

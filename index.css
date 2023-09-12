@@ -1,20 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
 
-/* reset */
+/* reset to defaults */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
 body {
   background-color: #ccc;
 }
+.content {
+  padding: 16px;
+}
+
+/* styling header */
+
 header,
 ul.navlinks {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+header {
   margin-right: 15px;
   margin-left: 15px;
 }
@@ -22,11 +31,15 @@ ul {
   list-style-type: none;
 }
 li {
-  margin-right: 10px;
+  margin-right: 15px;
 }
 a {
   text-decoration: none;
   color: white;
+  transition: all 300ms ease;
+}
+a:hover {
+  font-size: 18px;
 }
 button {
   padding: 10px;
@@ -34,16 +47,20 @@ button {
   background-color: blue;
   color: white;
   cursor: pointer;
+  border: none;
+  transition: all 300ms ease;
 }
 button:hover {
-  background: #4286f4;
-  color: red;
+  background: #fff;
+  color: blue;
 }
+
+/* styling main, top */
 .top {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 1rem;
+  margin-top: 32px;
   margin-left: 15px;
   margin-right: 15px;
 }
@@ -52,6 +69,9 @@ img {
   margin-left: 1rem;
   margin-right: 0px;
 }
+
+/* styling main, middle */
+
 .middle {
   background-color: purple;
   padding: 10px;
@@ -60,17 +80,24 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 2rem;
+  margin-top: 32px;
 }
+
 input {
-  width: 475px;
+  display: inline-block;
+  width: 100%;
   height: 30px;
+  padding: 10px;
   outline: none;
+  margin-right: 15px;
 }
+
+/* styling main, bottom */
 .bottom {
   margin-top: 2rem;
 }
 .advanced {
+  /* center */
   width: 50%;
   margin-right: auto;
   margin-left: auto;
@@ -87,13 +114,15 @@ input {
   margin-right: 15px;
   margin-left: 15px;
 }
+/* TODO: check on card height */
 .card {
   background-color: white;
   box-shadow: 0px 0px 3px;
   margin-right: 5px;
-  padding: 5px;
+  padding: 10px;
+  text-align: center;
   border-radius: 5px;
-  height: 150px;
+  height: 200px;
   transition: all 300ms;
 }
 .card:hover {
@@ -101,21 +130,24 @@ input {
 }
 .boost-links {
   margin-top: 2rem;
-
   text-align: center;
   background-color: purple;
   padding: 10px;
 }
 .boost-links h1 {
   color: #fff;
-  margin-bottom: 0.5rem;
+  margin-bottom: 8px;
 }
+
+/* styling footer */
 footer {
+  padding: 16px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: #fff;
   background-color: #000;
+  margin-bottom: 16px;
 }
 .icons {
   display: flex;
@@ -123,4 +155,7 @@ footer {
 .icons i {
   margin-right: 5px;
   cursor: pointer;
+}
+.icons i:hover {
+  font-style: 18px;
 }
